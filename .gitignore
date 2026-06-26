@@ -71,3 +71,9 @@ tokens.json
 # Temporary files
 *.tmp
 *.temp
+
+# Working context — never committed
+_context/
+
+# Generated document output
+docgen-output/

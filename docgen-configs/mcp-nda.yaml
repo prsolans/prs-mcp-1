@@ -1,0 +1,41 @@
+family:
+  name: "MCP-NDA — Fontara / Sentinel Security"
+  type: general
+  theme: corporate
+
+parties:
+  primary:
+    name: "Fontara"
+    legal_name: "Fontara, Inc."
+    entity_type: "corporation"
+    jurisdiction: "State of Delaware"
+    address: "2200 Innovation Drive, Suite 400, Austin, TX 78701"
+    signatory: { name: "Paul Solans", title: "Authorized Signatory" }
+    defined_term: "Disclosing Party"
+  counterparties:
+    - name: "Sentinel Security"
+      legal_name: "Sentinel Security, Inc."
+      entity_type: "corporation"
+      jurisdiction: "State of Delaware"
+      address: "456 Commerce Drive, Wilmington, DE 19801"
+      signatory: { name: "Authorized Signatory", title: "Authorized Signatory" }
+      defined_term: "Receiving Party"
+
+defaults:
+  governing_law: "State of Delaware"
+  venue: "Wilmington, Delaware"
+  auto_dates: false
+
+documents:
+  - type: nda
+    params:
+      effective_date: "2026-06-26"
+      term_years: 2
+
+critical_dates:
+  - type: expiration
+    date: "2028-06-26"
+    description: "NDA expiration — 2-year term from effective date"
+  - type: renewal_notice
+    date: "2028-03-28"
+    description: "Renewal notice deadline (90 days before expiration)"
